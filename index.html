@@ -40,16 +40,34 @@
         .floating { animation: float 6s ease-in-out infinite; }
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
 
-        /* WhatsApp Button */
-        .wa-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; padding: 15px 25px; border-radius: 50px; font-weight: bold; display: flex; align-items: center; gap: 10px; box-shadow: 0 0 20px rgba(37, 211, 102, 0.4); z-index: 999; text-decoration: none; transition: 0.3s; }
-        .wa-float:hover { transform: scale(1.1); }
+        /* Telegram Floating Button */
+        .tg-float { 
+            position: fixed; 
+            bottom: 30px; 
+            right: 30px; 
+            background: #0088cc; 
+            color: white; 
+            padding: 15px 25px; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            box-shadow: 0 0 20px rgba(0, 136, 204, 0.4); 
+            z-index: 999; 
+            text-decoration: none; 
+            transition: 0.3s; 
+        }
+        .tg-float:hover { transform: scale(1.1); background: #0077b5; }
     </style>
 </head>
 <body class="selection:bg-[#D4AF37] selection:text-black">
 
-    <a href="https://wa.me/994704440404" target="_blank" class="wa-float">
-        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.319 1.592 5.548 0 10.064-4.516 10.066-10.066.001-2.686-1.043-5.212-2.94-7.11s-4.422-2.942-7.11-2.942c-5.549 0-10.066 4.517-10.067 10.067 0 2.057.61 3.848 1.647 5.497l-.996 3.635 3.731-.973z"/></svg>
-        <span>Quick Chat</span>
+    <a href="https://t.me/AcademicExcellence0" target="_blank" class="tg-float">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M11.944 0C5.346 0 0 5.347 0 11.944c0 6.595 5.346 11.944 11.944 11.944 6.596 0 11.944-5.349 11.944-11.944C23.888 5.347 18.54 0 11.944 0zm5.832 8.356l-1.92 9.05c-.144.643-.524.8-.1.058l-2.924-2.154-1.41 1.357c-.156.156-.288.288-.588.288l.21-2.972 5.41-4.886c.235-.21-.051-.326-.364-.117l-6.685 4.208-2.88-.9c-.626-.196-.64-.626.13-.925l11.26-4.34c.52-.19.975.12.83.91z"/>
+        </svg>
+        <span>Telegram</span>
     </a>
 
     <header class="min-h-screen flex flex-col items-center justify-center text-center px-4 relative overflow-hidden">
@@ -78,21 +96,21 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="glass-panel p-8 rounded-3xl text-center">
-                <div class="text-5xl mb-4">📊</div>
+                <div class="text-5xl mb-4">📽️</div>
                 <h3 class="text-2xl font-bold mb-2">Presentation</h3>
                 <p class="text-gray-400 text-sm mb-6">Visual Design & Speaker Notes</p>
                 <div class="text-3xl font-black gold-text">300 AED</div>
                 <div class="text-xs text-gray-500 mt-2">VIP: 385 AED</div>
             </div>
              <div class="glass-panel p-8 rounded-3xl text-center">
-                <div class="text-5xl mb-4">📝</div>
+                <div class="text-5xl mb-4">📜</div>
                 <h3 class="text-2xl font-bold mb-2">Essay</h3>
                 <p class="text-gray-400 text-sm mb-6">Structure & Proofreading</p>
                 <div class="text-3xl font-black gold-text">200 AED</div>
                 <div class="text-xs text-gray-500 mt-2">VIP: 250 AED</div>
             </div>
              <div class="glass-panel p-8 rounded-3xl text-center">
-                <div class="text-5xl mb-4">📑</div>
+                <div class="text-5xl mb-4">📊</div>
                 <h3 class="text-2xl font-bold mb-2">Report</h3>
                 <p class="text-gray-400 text-sm mb-6">1000+ Words Formatting</p>
                 <div class="text-3xl font-black gold-text">350 AED</div>
@@ -162,7 +180,7 @@
                             <div class="absolute top-0 left-0 w-full h-1 bg-[#D4AF37]"></div>
                             <p class="text-gray-500 text-xs uppercase tracking-[0.2em] mb-1">Estimated Total</p>
                             <div id="totalDisplay" class="text-5xl font-black gold-text">300 AED</div>
-                            <p id="rushWarning" class="text-orange-500 font-bold text-xs mt-2 hidden animate-pulse">⚡ +50 AED RUSH FEE (Due within 48h)</p>
+                            <p id="rushWarning" class="text-orange-500 font-bold text-xs mt-2 hidden animate-pulse">⚠️ +50 AED RUSH FEE (Due within 48h)</p>
                         </div>
 
                         <button type="submit" class="w-full gold-bg text-black font-extrabold py-6 rounded-2xl text-xl hover:brightness-110 hover:scale-[1.01] transition-all shadow-xl">
@@ -172,7 +190,7 @@
                 </div>
 
                 <div id="thankYou" class="hidden text-center py-10 animate__animated animate__fadeIn">
-                    <div class="text-8xl mb-6">🎉</div>
+                    <div class="text-8xl mb-6">🙌</div>
                     <h2 class="text-5xl font-bold gold-text mb-6" style="font-family: 'Playfair Display';">Inquiry Sent!</h2>
                     <p class="text-xl text-gray-300 mb-8">We have received your request.</p>
                     
